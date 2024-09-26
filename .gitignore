@@ -1,0 +1,7 @@
+bazel-bin
+bazel-c-clang
+bazel-out
+bazel-testlogs
+.vscode/
+*.exe
+node_modules/

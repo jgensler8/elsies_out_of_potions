@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@bazel/ibazel": "^0.25.0"
+  },
+  "scripts" :{
+    "watch-gb": "npx ibazel run //src:mgba_my_rom"
+  }
+}
