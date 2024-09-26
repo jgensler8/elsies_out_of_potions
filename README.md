@@ -41,7 +41,18 @@ Usually, one would properly create the http_archives / git_repo for dependencies
 * anywhere with `C:/Users/jgens/...`
 * `src/BUILD`: change `hugedriver_root` and `gbdk_root`, also change `executable_extension` if you aren't on Windows.
 
-2. 
+2.
+
+you will need to generate pngs from the aseprite files (~50 of them).
+
+* open file
+* `Export` > `Export as`
+* change extension to `png` (default is gif)
+* export and accept the default frame sequencing (*1.png, *2.png, etc...)
+
+sorry, I didn't want to commit these images to the repo, seemed like a waste of space.
+
+3. 
 
 to build only the rom assets:
 
@@ -63,7 +74,7 @@ bazel run //src:mgba_my_rom
 
 note: because this is a build system, using the run command will automatically build the dependencies (the rom in this case)
 
-3. (optional: use ibazel watcher to watch and compile+relaunch the game in mgba when done compiling)
+4. (optional: use ibazel watcher to watch and compile+relaunch the game in mgba when done compiling)
 
 ```
 npm run watch-gb
